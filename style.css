@@ -138,3 +138,34 @@ form div {
         text-align: center;
     }
 }
+
+/* Dark mode */
+.hero-image.dark-img { display: none; }
+body.dark-mode .hero-image.dark-img { display: block; }
+body.dark-mode .hero-image.light-img { display: none; }
+body.dark-mode { background-color: #121212; color: #f0f0f0; }
+body.dark-mode header { background-color: #0a0a1a; }
+
+.theme-btn {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.theme-btn:hover {
+    background-color: #fff;
+    color: #121212;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}

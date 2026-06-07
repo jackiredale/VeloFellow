@@ -16,13 +16,19 @@
                     <li><a href="services.html">Services</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </nav>
+               </nav>
+               <button id="theme-toggle" class="theme-btn">🌙</button>
     </header>
  
     <main>
          <section id="home">
              <h1>Welcome to VeloFellow</h1>
              <p>Winchester's Mobile Cycle Mechanic</p>
+                <img src="assets/images/anton-savinov-CL7shAl6888-unsplash.jpg" 
+             alt="VeloFellow Mobile Mechanic" class="hero-image light-img">
+                <img src="assets/images/anton-savinov-589WP0tHcBQ-unsplash.jpg" 
+             alt="VeloFellow Mobile Mechanic" class="hero-image dark-img">
+
              <a href="services.html" class="btn">View Our Services</a>
 
             </section>
@@ -31,6 +37,12 @@
     <footer>
         <p>&copy; 2026 VeloFellow. All rights reserved.</p>
     </footer> 
-
+    <script>
+        const btn = document.getElementById('theme-toggle');
+        btn.addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            btn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+        });
+    </script>
 </body>
 </html>
