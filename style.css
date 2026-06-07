@@ -53,7 +53,7 @@ nav ul li a:hover {
     color: var(--color-accent);
 }
 
-/* ===lqayout=== */
+/* ===layout=== */
 
 main {
     max-width: 900px;
@@ -67,7 +67,7 @@ section {
 }
 
 h1 {
-    color: var(--color-primary);
+    color: var(--color-accent);
     margin-bottom: 20px;
 }
 
@@ -199,6 +199,7 @@ body.dark-mode .hero-image.dark-img { display: block; }
 body.dark-mode .hero-image.light-img { display: none; }
 body.dark-mode { background-color: #121212; color: #f0f0f0; }
 body.dark-mode header { background-color: #0a0a1a; }
+body.dark-mode h1, body.dark-mode h2 { color: #f4621f; }
 
 .theme-btn {
     background: none;

@@ -1,5 +1,5 @@
 # VeloFellow
-A multi-page responsive website for VEloFellow a mobile bicycle mechanic service based in Winchester, Hampshire.
+A multi-page responsive website for VeloFellow a mobile bicycle mechanic service based in Winchester, Hampshire.
 
 ## Live Site
 - https://jackiredale.github.io/VeloFellow/index.html
