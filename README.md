@@ -8,7 +8,8 @@ A multi-page responsive website for VEloFellow a mobile bicycle mechanic service
 - dark mode
 - contact form
 
-
+## setup
+open "index.html" in a web browser
 
 ## Image Credits
 
