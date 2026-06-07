@@ -1,3 +1,5 @@
+/* === css variables === */
+
 :root {
 
 --color-primary: #1a1a2e;
@@ -8,6 +10,7 @@
 --color-accent-hover: #d44e0f;
 --color-footer-bg: #1a1a2e;
 }
+/* ===reset=== */
 
 * {
     margin: 0;
@@ -15,11 +18,14 @@
     box-sizing: border-box;
 }
 
+/* ===base styles=== */
 body {
     font-family: var(--font-main);
     background-color: var(--color-background);
     color: var(--color-text);
 }
+
+/* ===header and navigation=== */
 
 header {
     background-color: var(--color-primary);
@@ -47,6 +53,8 @@ nav ul li a:hover {
     color: var(--color-accent);
 }
 
+/* ===lqayout=== */
+
 main {
     max-width: 900px;
     margin: 0 auto;
@@ -68,12 +76,16 @@ h2 {
     margin-bottom: 15px;
 }
 
+/* ===footer=== */
+
 footer {
     background-color: var(--color-footer-bg);
     color: #fff;
     text-align: center;
     padding: 15px 0;
 }
+
+/* ===buttons=== */
 
 .btn {
     display: inline-block;
@@ -89,6 +101,8 @@ footer {
 .btn:hover {
     background-color: var(--color-accent-hover);
 }
+
+/* ===form=== */
 
 form {
     display: flex;
@@ -200,6 +214,8 @@ body.dark-mode header { background-color: #0a0a1a; }
     background-color: #fff;
     color: #121212;
 }
+
+/* ===hero image=== */
 
 .hero-image {
     width: 100%;
