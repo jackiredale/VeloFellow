@@ -53,6 +53,25 @@ nav ul li a:hover {
     color: var(--color-accent);
 }
 
+nav ul li a {
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-accent);
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
 /* ===layout=== */
 
 main {
@@ -67,8 +86,21 @@ section {
 }
 
 h1 {
-    color: var(--color-accent);
+    color: var(--color-primary);
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+h1::before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 1.2em;
+    background-color: var(--color-accent);
+    border-radius: 3px;
+    flex-shrink: 0;
 }
 
 h2 {
@@ -259,4 +291,13 @@ body.dark-mode h1, body.dark-mode h2 { color: #f4621f; }
 .service-card h3 {
     color: var(--color-primary);
     margin-bottom: 8px;
+}
+
+body.dark-mode .service-card {
+    background-color: #2a2a2a;
+    border-color: #444;
+}
+
+body.dark-mode .service-card h3 {
+    color: var(--color-accent);
 }
