@@ -44,3 +44,44 @@ nav ul li a:hover {
     color: var(--color-accent);
 }
 
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: var(--color-primary);
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: var(--color-primary);
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: var(--color-footer-bg);
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-accent);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--color-accent-hover);
+}
