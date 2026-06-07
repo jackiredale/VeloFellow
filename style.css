@@ -24,6 +24,9 @@ body {
 header {
     background-color: var(--color-primary);
     padding: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 header nav ul {
@@ -80,6 +83,7 @@ footer {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    align-self: center;
 }
 
 .btn:hover {
@@ -119,26 +123,62 @@ form div {
     gap: 5px;
 }
 
+/* Tablet (up to 900px) */
+@media (max-width: 900px) {
+    main {
+        max-width: 100%;
+        padding: 30px 20px;
+    }
+
+    .hero-image {
+        height: 280px;
+    }
+
+    header nav ul {
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Mobile (up to 600px) */
 @media (max-width: 600px) {
-    /* nav links stack vertically */
+    header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.theme-btn {
+    margin-top: 0;
+}
+
     header nav ul {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 8px;
     }
 
-    /* main padding tighter on small screens */
+    .hero-image {
+        height: 200px;
+    }
+
     main {
         padding: 20px 15px;
     }
 
-    /* button full width */
+    h1 {
+        font-size: 1.4rem;
+    }
+
     .btn {
         display: block;
         text-align: center;
     }
 }
-
 /* Dark mode */
 .hero-image.dark-img { display: none; }
 body.dark-mode .hero-image.dark-img { display: block; }
@@ -154,6 +194,7 @@ body.dark-mode header { background-color: #0a0a1a; }
     border-radius: 4px;
     cursor: pointer;
     margin-top: 10px;
+
 }
 .theme-btn:hover {
     background-color: #fff;
