@@ -2,6 +2,10 @@
 A multi-page responsive website for VEloFellow a mobile bicycle mechanic service based in Winchester, Hampshire.
 
 ## Live Site
+- https://jackiredale.github.io/VeloFellow/index.html
+
+## Github
+- https://github.com/jackiredale/VeloFellow
 
 ## Features
 - desktop , tablet and mobile views 
