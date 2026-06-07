@@ -1,0 +1,22 @@
+:root {
+
+--color-primary: #1a1a2e;
+--color-accent: #f4621f;
+--color-background: #f9f6f2;
+--color-text: #222222;
+--font-main: 'Segoe UI', Arial, sans-serif;
+--color-accent-hover: #d44e0f;
+--color-footer-bg: #1a1a2e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
