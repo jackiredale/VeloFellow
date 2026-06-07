@@ -85,3 +85,56 @@ footer {
 .btn:hover {
     background-color: var(--color-accent-hover);
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+form label {
+    font-weight: bold;
+}
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-accent);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+form button:hover {
+    background-color: var(--color-accent-hover);
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+@media (max-width: 600px) {
+    /* nav links stack vertically */
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* main padding tighter on small screens */
+    main {
+        padding: 20px 15px;
+    }
+
+    /* button full width */
+    .btn {
+        display: block;
+        text-align: center;
+    }
+}
